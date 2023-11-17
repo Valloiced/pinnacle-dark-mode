@@ -1,0 +1,43 @@
+{
+    "name": "Pinnacle Dark Mode",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "Provides dark mode theme for the PNC Pinnacle",
+    "icons": {
+        "16": "images/extension-icon-16x16.png",
+        "32": "images/extension-icon-32x32.png",
+        "48": "images/extension-icon-48x48.png",
+        "128": "images/extension-icon-128x128.png"
+    },
+    "action": {
+        "default_title": "Pinnacle Dark Mode",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://pinnacle.pnc.edu.ph/*"],
+            "js": [
+                "inject/theme.js", 
+                "inject/constants.js",
+                "inject/helper.js",
+                "inject/functions/_global.js",
+                "inject/functions/changeDashboard.js",
+                "inject/functions/changeClasses.js",
+                "inject/functions/changeLibrary.js",
+                "inject/functions/changeTables.js",
+                "inject/functions/changeCalendar.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [ "/images/*" ],
+            "matches": [ "*://pinnacle.pnc.edu.ph/*" ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "tabs"
+    ]
+}

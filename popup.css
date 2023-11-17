@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/** Chrome extensions DOM sizes have limited max width of 800px and limited max height of 600px (keep in mind) */
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    gap: 1em;
+    padding: 1em;
+    transition: all 250ms ease-in;
+}
+
+#extension--header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 0.5em;
+    background-color: #F3FCF7;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.555);
+    border-radius: 10px;
+    transition: all 250ms ease-in;
+}
+
+#header--logo {
+    width: 100%;
+}
+
+#error {
+    display: none;
+    color: #F3FCF7;
+}
+
+#error a, #error a:visited {
+    color: inherit;
+    font-style: italic;
+}
+
+#darkmode--toggler {
+    display: flex;
+    width: 45px;
+    padding: 0.2em;
+    background-color: #484F55;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.800);
+}
+
+.knob {
+    width: 20px;
+    height: 20px;
+    background-color: #F3FCF7;
+    border-radius: 50%;
+    transition: all 100ms ease-in;
+}
+
+.knob--on {
+    background-color: #484F55;
+    box-shadow: inset -1px -1px 5px rgba(0, 0, 0, 0.555);
+    transform: translateX(25px);
+}
