@@ -1,10 +1,6 @@
 const _init = (isDarkMode) => {
     /* Default */
-<<<<<<< HEAD
     _startup();
-=======
-    _startup(isDarkMode);
->>>>>>> 30491d9 (Fixes #1)
     _global(isDarkMode);
 
     // Filter Domain and Get API
