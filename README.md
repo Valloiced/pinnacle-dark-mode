@@ -8,7 +8,8 @@ A chrome extension that provides dark mode theme for the [PNC Pinnacle](https://
 1. Go to [chrome://extensions](chrome://extensions)
 2. Enable Developer mode
 3. Click "Load Unpacked" and choose the project folder
-4. Done!
+4. You can pin the extension in the search bar, click it to popup, and toggle it
+5. Done!
 
 Alternatively, you could download the crx file [here](https://drive.google.com/uc?export=download&id=1_3F2-3RM1zhzZvWM36GXtvHd-E1wbRfU)
 
