@@ -16,11 +16,15 @@
     "content_scripts": [
         {
             "matches": ["*://pinnacle.pnc.edu.ph/*"],
+            "css": [
+                "inject/startup.css"
+            ],
             "js": [
                 "inject/theme.js", 
                 "inject/constants.js",
                 "inject/helper.js",
                 "inject/functions/_global.js",
+                "inject/functions/_startup.js",
                 "inject/functions/changeDashboard.js",
                 "inject/functions/changeClasses.js",
                 "inject/functions/changeLibrary.js",
