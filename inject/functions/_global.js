@@ -113,8 +113,9 @@ const _global = (darkTheme) => {
             });
 
             /* Font Awesome and Spans*/
-            const i = card.getElementsByClassName('fas');
             const spans = card.getElementsByTagName('span');
+            const i = Object.values(card.getElementsByClassName('fas'))
+                .filter(c => !(/text-danger/g).test(c.className)); // Filter Checked Icons
 
             setStyleAll([ ...i, ...spans ], darkTheme, {
                 "color": TEXT_GREEN
